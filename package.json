@@ -1,0 +1,55 @@
+{
+  "name": "jsnapcam",
+  "author": "Guilherme Luis Faustino <contato@guilhermeluis.com>",
+  "homepage": "https://github.com/iguilhermeluis/JSnapCam#readme",
+  "version": "1.0.0",
+  "description": "A library that facilitates the integration of camera support into web applications.",
+  "main": "dist/jsnapcam.js",
+  "types": "dist/jsnapcam.d.ts",
+  "exports": {
+    ".": "./dist/jsnapcam.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc",
+    "build": "tsc"
+  },
+  "bugs": {
+    "url": "https://github.com/iguilhermeluis/JSnapCam/issues"
+  },
+  "keywords": [
+    "getusermedia",
+    "streaming",
+    "frontcamera",
+    "backcamera",
+    "camera",
+    "webcam",
+    "camera js",
+    "webcam js",
+    "camera javascript",
+    "webcam javascript",
+    "camera html",
+    "webcam html",
+    "camera html5",
+    "webcam html5"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=14.17"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iguilhermeluis/JSnapCam.git"
+  }
+}
