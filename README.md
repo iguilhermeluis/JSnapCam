@@ -61,6 +61,53 @@ To use the `JSnapCam` in your project, you can either include the source code di
 import Webcam from "jsnapcam";
 ```
 
+#### 2. Place elements in HTML
+
+```html
+<video id="webcam" autoplay playsinline width="640" height="480"></video>
+<canvas id="canvas" class="d-none"></canvas>
+<audio id="snapSound" src="audio/snap.wav" preload="auto"></audio>
+```
+
+#### 3. Call constructor in javascript
+
+```js
+const webcamElement = document.getElementById("webcam");
+const canvasElement = document.getElementById("canvas");
+const snapSoundElement = document.getElementById("snapSound");
+const webcam = new Webcam(
+  webcamElement,
+  "user",
+  canvasElement,
+  snapSoundElement
+);
+```
+
+#### 4. Start Webcam
+
+```js
+webcam
+  .start()
+  .then((result) => {
+    console.log("webcam started");
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+```
+
+#### 5. Take Photo
+
+```js
+var picture = webcam.snap();
+```
+
+#### 6. Stop Webcam
+
+```js
+webcam.stop();
+```
+
 ### API Reference
 
 #### Constructor
@@ -126,6 +173,10 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
    </td> 
   </tr>
 </table>
+
+### Credit
+
+This project was built with inspiration and guidance from [webcam-easy](https://www.npmjs.com/package/webcam-easy) by [Benson Ruan](https://github.com/bensonruan). Their work provided valuable insights and contributed to the development of this project.
 
 ### License
 

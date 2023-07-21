@@ -2,7 +2,7 @@
   "name": "jsnapcam",
   "author": "Guilherme Luis Faustino <contato@guilhermeluis.com>",
   "homepage": "https://github.com/iguilhermeluis/JSnapCam#readme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library that facilitates the integration of camera support into web applications.",
   "main": "dist/jsnapcam.js",
   "types": "dist/jsnapcam.d.ts",
